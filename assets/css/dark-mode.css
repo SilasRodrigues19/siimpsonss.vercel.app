@@ -1,0 +1,105 @@
+[data-theme="dark"] .navbar img {
+  filter: invert(1);
+}
+
+[data-theme="dark"] #heading-gallery {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25)), url("../../images/camera-invert.png");
+}
+
+[data-theme="dark"] #heading-gallery strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] .content-gallery h2 {
+  color: #fff;
+}
+
+[data-theme="dark"] .content-gallery strong {
+  color: #555555;
+}
+
+[data-theme="dark"] {
+  background-image: linear-gradient(to right, rgba(111,111,111,1), rgba(255,255,255,1)) !important;
+  color: #fff;
+}
+
+[data-theme="dark"] h3 {
+  color: #fff;
+}
+
+[data-theme="dark"] .highlights .content .icon:hover {
+  color: #090f0f !important;
+}
+
+[data-theme="dark"] a {
+    color: #fff !important;
+}
+
+[data-theme="dark"] header.special p {
+    color: #555555 !important;
+}
+
+[data-theme="dark"] .modal-body p {
+    color: #000 !important;
+}
+
+[data-theme="dark"] a:hover {
+    color: #ce1b28 !important;
+}
+
+[data-theme="dark"] .btn-section-live a {
+    color: #000 !important;
+}
+
+[data-theme="dark"] .btn-section-live a:hover {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .section-live a:active {
+    background-color: #C0C0C0;
+    color: #fff !important;
+}
+
+[data-theme="dark"] section .content p strong.twitch-color {
+    color: #9147FF !important;
+}
+
+[data-theme="dark"] section .content {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme="dark"] section .content h2{
+  color: #fff;
+}
+
+[data-theme="dark"] section .content p{
+  color: #fff;
+}
+
+[data-theme="dark"] section .content p strong {
+  color: #fff !important;
+}
+
+[data-theme="dark"] header a{
+  color: #fff;
+}
+
+[data-theme="dark"] header a:hover{
+  color: #ce1b28;
+}
+
+[data-theme="dark"] footer a:hover{
+  color: #ce1b28 !important;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
