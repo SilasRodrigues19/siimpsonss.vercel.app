@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>SimpSonSs - Streamer | Criador de counteúdo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Site para divulgação da live do SimpSonsS" />
+		<meta name="keywords" content="SimpSonsS, Streamer, Criador de counteúdo, Entretenimento" />
+		<link rel="shortcut icon" type="image/png" href="simp.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/css/dark-mode.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header" class="font-style">
+				<a class="logo" href="index.html">Início</a>
+				<nav class="navbar">
+					<h3 class="navbar-brand mr-2 mt-3">Tema<img src="images/moon.png" alt=""></h3>
+					<nav class="navbar-nav">
+						<div class="nav-link">
+							<div class="custom-control custom-switch">
+								<label class="custom-control-label mt-3 mr-5" for="darkSwitch">
+									<input type="checkbox" class="custom-control-input mt-3" id="darkSwitch">
+								  	<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu" class="font-style">
+				<ul class="links">
+					<li><a href="about.html">Sobre</a></li>
+					<li><a href="projects.html">Projetos</a></li>
+					<li><a href="gallery.html">Galeria</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1 class="animated zoomIn delay-1 font-style">Live do SimpSonsS</h1>
+					<p class="animated fadeInUp font-style">Live de <strong>Segunda a Sexta, a partir das 20hrs</strong> na <a href="https://twitch.tv/siimpsonss" target="_blank"><strong class="twitch-color">Twitch TV</strong></a> Clique e venha conferir e brincar com a gente!</p>
+				</div>
+				<video autoplay loop muted playsinline src="images/videoplayback2.mp4"></video>
+				
+			</section>
+			<section class="audio-autoplay">
+				<audio class="audio-autoplay" controls autoplay loop>
+					<source src="images/videoplayback2.mp4" type="audio/ogg">
+					<source src="images/videoplayback2.mp4" type="audio/mpeg">
+				</audio>
+			</section>
+
+		 <!-- Start Modal -->
+	  <div class="modal fade animated zoomIn delay-1" id="myModal">
+	    <div class="modal-dialog modal-dialog-centered">
+	      <div class="modal-content">
+	      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="modal-title font-style">Sorteios feitos na stream</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body animated zoomIn delay-1">
+			<p>Informações sobre os sorteios serão descritas aqui:</p>
+			<img class="modal-img animated fadeInLeft delay-3 infinite" src="images/bart-simp.png">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Entendi.</button>
+        </div>
+        
+	      </div>
+	    </div>
+	  </div> <!-- End of Modal -->
+		</div> <!-- End of rows div -->
+					
+		<!-- Highlights -->
+			<section class="wrapper font-style">
+				<div class="inner">
+					<header class="special">
+						<h2>Sobre a nossa live</h2>
+						<p>Além do entretenimento e da interação com o chat, nossa live possui diversas brincadeiras e premiações de acordo com metas, confira melhor abaixo:</p>
+					</header>
+					<div class="highlights">
+						<section class="animatedHighlights animated fadeInLeft">
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-gift" data-toggle="modal" data-target="#myModal"><span class="label">Icon</span></a>
+									<h3>Sorteios de skins</h3>
+								</header>
+								<p>Sorteios de skins por metas de visualizações e pelos contribuidores do <a href="https://twitch.amazon.com/tp" target="_blank"><strong class="twitch-color">Twitch prime.</strong></a></p>
+							</div>
+						</section>
+						<section class="animatedHighlights animated fadeInLeft">
+							<div class="content">
+								<header>
+									<a href="https://streamelements.com/siimpsonss/tip" class="icon fa-dollar" target="_blank"><span class="label">Icon</span></a>
+									<h3>Doação</h3>
+								</header>
+								<p>Contribua para ajudar a live a se desenvolver e aumentar o número de sorteios.</p>
+								<p>Dependendo do valor, poderá pedir um mico ou um cos<strong>pobre</strong></p>
+							</div>
+						</section>
+						<section class="animatedHighlights animated fadeInLeft">
+							<div class="content">
+								<header>
+									<a id="invite" href="#" class="icon fa-users"><span class="label">Icon</span></a>
+									<h3>Chame um amigo</h3>
+								</header>
+								<p>Divulgue a live e convide pelo menos um amigo pra assistir junto com você.</p>
+								<input class="inputhidden" id="linkLive" value="https://www.twitch.tv/siimpsonss">
+							</div>
+						</section>
+						<section class="animatedHighlights2 animated fadeInLeft">
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
+									<h3>Crescimento</h3>
+								</header>
+								<p>Agora somos <strong>afiliados</strong> e precisamos bater a meta de <strong>75 Viweres</strong> por dia.</p>
+							</div>
+						</section>
+						<section class="animatedHighlights2 animated fadeInLeft">
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-bell"><span class="label">Icon</span></a>
+									<h3>Notificação da Twitch</h3>
+								</header>
+								<p>É importante que você habilite o sininho na <a href="https://twitch.tv/siimpsonss" target="_blank"><strong class="twitch-color">Twitch</strong></a> para receber a notificação de quando a live estiver on.</p>
+								<p>Você pode fazer isso agora, clicando sobre o nome Twitch, destacado em roxo.</p>
+							</div>
+						</section>
+						<section class="animatedHighlights2 animated fadeInLeft">
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-balance-scale"><span class="label">Icon</span></a>
+									<h3>Mantenha o equílibrio</h3>
+								</header>
+								<p>Interaja no chat, mas com respeito aos demais.</p>
+								<p>Nosso ambiente será mais saúdavel se houver respeito entre todos.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+		<!-- CTA -->
+			<section id="cta" class="wrapper">
+			</section>
+
+			<section class="wrapper font-style text-center">
+				<hr>
+				<h2>Cheque se a stream está online por aqui</h2>
+				<button class="btn-section-live"><a href="https://dlive.tv/Simpsonss" target="_blank">Quero assistir!</a></button>
+				<div class="section-live">
+					<iframe class="section-iframe" src="https://dlive.tv/Simpsonss" title="SimpSonSs"></iframe>
+				</div>
+				<hr>
+			</section>
+
+		<!-- Testimonials -->
+			<section class="wrapper font-style champs">
+				<div class="inner">
+					<header class="special">
+						<h2>Campeões mais jogados - Season 9</h2>
+						<p>Esses foram os 3 campões com mais jogos em 2019, está curioso pra saber com o que eu estou jogando agora?.</p>
+						<p>Vem comigo pra <a href="https://twitch.tv/siimpsonss" target="_blank"><strong class="twitch-color">Twitch</strong></a></p>
+					</header>
+					<div class="testimonials">
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>O lendário <strong>Yasuo,</strong> com 97 jogos no total.</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img class="champion-img" src="images/yasuo.png" alt="0/10" />
+									</div>
+									<p class="credit">- <strong>Yasuo</strong> <span>o Imperdoável.</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>O segundo mais jogado foi o <strong>Sylas,</strong> com 65 jogos no total.</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img class="champion-img" src="images/sylas.png" alt="Sylas" />
+									</div>
+									<p class="credit">- <strong>Sylas</strong> <span>o Abjugado.</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Em terceiro lugar o <strong>Veigar,</strong> com 58 jogos no total.</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img class="champion-img" src="images/veigar.png" alt="Veigar" />
+									</div>
+									<p class="credit">- <strong>Veigar</strong> <span>o Pequeno Mestre do Mal.</span></p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3><strong>Sobre esse site.</strong></h3>
+							<p>Esse site foi desenvolvido com um template base e foram realizadas modificações e adaptações de acordo com a necessidade.</p>
+							<p>O objetivo é apenas divulgar a live e contar um pouco como foi o caminho até aqui, quais foram os primeiros passos e primeiras plataformas e sobre os <a href="projects.html">projetos</a> no qual eu estou envolvido para que o público mais novo junte-se a nós e conheça melhor a nossa <strong>historia!</strong></p>
+						</section>
+						<section>
+							<h4><strong>Entre em contato</strong></h4>
+							<ul class="alt">
+								<li class="contact-li">Página do SimpSonSs no Facebook.</li>
+								<li class="contact-li">Instagram pessoal.</li>
+								<li class="contact-li">Me mande mensagem no WhatsApp.</li>
+								<li class="contact-li">Canal no YouTube.</li>
+								<li class="contact-li">Venha me assistir na Twitch TV.</li>
+								<li class="contact-li">Venha me assistir na DLive.TV.</li>
+							</ul>
+						</section>
+						<section>
+							<h4><strong>Minhas Redes sociais</strong></h4>
+							<ul class="plain">
+								<li><a href="https://www.facebook.com/livesimpsonss/" target="_blank"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+
+								<li><a href="https://www.instagram.com/livesimpsonss/" target="_blank"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+
+								<li><a href="https://wa.me/5521975472741" target="_blank"><i class="icon fa-whatsapp">&nbsp;</i>WhatsWeb</a></li>
+
+								<li><a href="https://www.youtube.com/channel/UC30gJAc1yWUmi9NSsFMkhVg?sub_confirmation=1" target="_blank"><i class="icon fa-youtube-play">&nbsp;</i>Youtube</a></li>
+
+								<li><a href="https://www.twitch.tv/siimpsonss" target="_blank"><i class="icon fa-twitch">&nbsp;</i>Twitch</a></li>
+
+								<li><a href="https://dlive.tv/SimpSonSs" target="_blank" class="footer-img-style"><img class="footer-img" src="images/dlive.png"></a><a href="https://dlive.tv/SimpSonSs" target="_blank">DLive</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+							&copy; Luiz "SimpSonsS" Guilherme. 2020.
+						<div class="copy-details">
+	                        <br><br>Créditos dedicados ao modelo desenvolvido por
+	                        <a href="https://templated.co/industrious" target="_blank">TEMPLATED</a> sob a licença <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Atributtion 3.0</a>
+	                        <a id="back" href="#banner" class="fa fa-arrow-up back-to-home" aria-hidden="true"></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/bootstrap.min.js"></script>
+			<script src="assets/js/popper.js"></script>
+			<script src="assets/js/dark-mode-switch.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
