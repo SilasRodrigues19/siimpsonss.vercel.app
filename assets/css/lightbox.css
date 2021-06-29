@@ -7,6 +7,7 @@ body.lb-disable-scrolling {
   top: 0;
   left: 0;
   z-index: 9999;
+  max-width: 100%;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -73,7 +74,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(../../images/loading.gif) no-repeat;
 }
 
 .lb-nav {

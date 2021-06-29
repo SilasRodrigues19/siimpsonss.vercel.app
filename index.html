@@ -14,14 +14,86 @@
 		<link rel="shortcut icon" type="image/png" href="images/simp.png" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/dark-mode.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="assets/js/jquery.validate.min.js"></script>
+		<script src="assets/js/localization/messages_pt_BR.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+
+		<script>
+				jQuery(function ($) {
+
+					$.validator.addMethod("alphabetsnspace", function(value, element) {
+        				return this.optional(element) || /^[a-zA-ZÀ-ú' ]*$/.test(value);
+   					});
+
+   					$.validator.addMethod("nicknspace", function(value, element) {
+        				return this.optional(element) || /^[a-zA-Z0-9 _]*$/.test(value);
+   					});
+
+				$("#formContato").validate({
+					rules: {
+						 nome: {
+						 	alphabetsnspace: true,
+						 	minlength: 3,
+						 	maxlength: 15,
+						 	required: true					 	
+
+						 },
+						 nick: {
+						 	required: true,
+						 	minlength: 3,
+						 	maxlength: 20,
+						 	nicknspace: true
+						 },
+						 email: {
+						 	required: true,
+						 	email: true
+						 },
+						 celular: {
+						 	required: true,
+						 	minlength: 15
+						 },
+						 mensagem: {
+						 	required: true,
+						 	maxlength: 2500
+						 }
+					},
+					messages:{
+						 nome: {
+						 	required:"Por favor, informe seu nome",
+						 	alphabetsnspace: "Por favor, apenas letras"
+						 },
+						 nick: {
+						 	required:"Por favor, informe seu nick na Twitch",
+						 	nicknspace: "Não faça uso de acentos nem símbolos (somente letras e underline)"
+						 },
+						 email: {
+						 	required:"Por favor, informe seu e-mail para contato"
+						 },
+			             celular:{
+		                    required:"Por favor, informe seu número de celular",
+		                    minlength:"Por favor, insira 11 dígitos (somente números)"
+			             },
+			             mensagem:{
+		                    required:"Digite a sua mensagem",
+		                    maxlength:"Tente ser mais objetivo"
+			             }  
+       				}
+				})
+			});
+				$("#celular").mask("(00) 00000-0000");
+ 	
+		</script>
 
 	</head>
 	<body class="is-preload">
@@ -30,7 +102,7 @@
 			<header id="header" class="font-style">
 				<a class="logo" href="index.html">Início</a>
 				<nav class="navbar">
-					<h3 class="navbar-brand mr-2 mt-3">Tema<img src="images/moon.png" alt=""></h3>
+					<h3 class="navbar-brand mr-2 mt-3">Tema<img src="images/moon.png" alt="Lua"></h3>
 					<nav class="navbar-nav">
 						<div class="nav-link">
 							<div class="custom-control custom-switch">
@@ -45,11 +117,32 @@
 				</nav>
 			</header>
 
+			<aside class="social">
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/LivedoSimpsonss" target="_blank"><i class="fab fa-facebook"></i>
+							<span>Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/casal_simpsonss/" target="_blank"><i class="fab fa-instagram"></i>
+							<span>Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/c/simpsonss?sub_confirmation=1" target="_blank"><i class="fab fa-youtube"></i>
+							<span>YouTube</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+
 		<!-- Nav -->
 			<nav id="menu" class="font-style">
 				<ul class="links">
 					<li><a href="about.html">Sobre</a></li>
 					<li><a href="projects.html">Projetos</a></li>
+					<li><a href="donate.html">Doadores</a></li>
 					<li><a href="gallery.html">Galeria</a></li>
 				</ul>
 			</nav>
@@ -57,106 +150,199 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<h1 class="animated zoomIn delay-1 font-style">Live do SimpSonsS</h1>
-					<p class="animated fadeInUp font-style">Live de <strong>Segunda a Sexta, a partir das 20hrs</strong> na <a href="https://twitch.tv/siimpsonss" target="_blank"><strong class="twitch-color">Twitch TV</strong></a> Clique e venha conferir e brincar com a gente!</p>
+					<h1 class="font-style" data-aos="fade-down">Live do SimpSonsS</h1>
+					<p class="font-style" data-aos="fade-up">Live de <strong>Segunda a Sexta, a partir das 20hrs</strong> Clique e venha conferir e brincar com a gente!</p>
+					<p class="font-style" data-aos="zoom-in-up"><a href="http://livedosimpsonss.000webhostapp.com/projects#partners">Assista a live de parceiros quando SimpSonsS estiver offline.</a></p>
+					<a href="https://www.twitch.tv/siimpsonss" target="_blank"><img class="img-banner" src="https://1000logos.net/wp-content/uploads/2018/08/Twitch-Logo.png" alt="Banner" data-aos="zoom-in"></a>
 				</div>
-				<video autoplay loop muted playsinline src="images/videoplayback2.mp4"></video>
+				<video autoplay loop muted playsinline src="videos/videoplayback2.mp4"></video>
 				
 			</section>
-			<section class="audio-autoplay">
-				<audio class="audio-autoplay" controls autoplay loop>
-					<source src="images/awaken-audio.mp3" type="audio/ogg">
-					<source src="images/awaken-audio.mp3" type="audio/mpeg">
+			<section class="audio-autoplay" data-aos="flip-up">
+				<audio class="audio-autoplay tooltip-secondary" title="Você pode pausar, mutar e controlar o volume" controls autoplay loop>
+					<source src="videos/awaken-audio.mp3" type="audio/ogg">
+					<source src="videos/awaken-audio.mp3" type="audio/mpeg">
 				</audio>
 			</section>
 
-		 <!-- Start Modal -->
-	  <div class="modal fade animated zoomIn delay-1" id="myModal">
+	<!-- Start Modal -->
+	  <div class="modal modal-popout-bg fade animated zoomIn delay-1" id="myModal">
 	    <div class="modal-dialog modal-dialog-centered">
 	      <div class="modal-content">
 	      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="modal-title font-style">Sorteios feitos na stream</h3>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body animated zoomIn delay-1">
-			<p>Informações sobre os sorteios serão descritas aqui:</p>
-			<img class="modal-img animated fadeInLeft delay-3 infinite" src="images/bart-simp.png">
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Entendi.</button>
-        </div>
+	        <!-- Modal Header -->
+	        <div class="modal-header">
+	          <h3 class="modal-title font-style">Sorteios feitos na stream</h3>
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        </div>
+	        
+	        <!-- Modal body -->
+	        <div class="modal-body animated zoomIn delay-1">
+				<p>No momento não estou podendo fazer sorteios devido a adaptação na plataforma</p>
+				<p>Me ajudem a bater as metas de visualizações que em breve haverá sorteios =D</p>
+				<img class="modal-img animated fadeInRight delay-3" src="images/bart-simp.png" alt="Imagem do Bart">
+	        </div>
+	        
+	        <!-- Modal footer -->
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Entendi.</button>
+	        </div>
         
 	      </div>
-	    </div>
-	  </div> <!-- End of Modal -->
-		</div> <!-- End of rows div -->
+	  </div> <!-- End of rows div -->
+	 </div>  <!-- End of Modal --> 
+
+	 <!-- Start Modal -->
+	  <div class="modal modal-popout-bg fade animated zoomIn delay-1" id="myModal2">
+	    <div class="modal-dialog modal-dialog-centered">
+	      <div class="modal-content modal-opacity">
+	      
+	        <!-- Modal Header -->
+	        <div class="modal-header">
+	          <h3 class="modal-title font-style">Regras</h3>
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        </div>
+	        
+	        <!-- Modal body -->
+	        <div class="modal-body animated zoomIn delay-1">
+				<p>Proíbido conteúdos com:</p>
+				<p>&bull; Pornografia</p>
+				<p>&bull; Violência</p>
+				<p>&bull; Religião</p>
+				<p>&bull; Política</p>
+				<p>Sem preconceitos, insultos, ofensas e assuntos polêmicos</p>
+				<p>Divulgação somente com autorização</p>
+				<p>Desrespeitar essas regras implicará em banimento</p>
+	        </div>
+	        
+	        <!-- Modal footer -->
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Entendi.</button>
+	        </div>
+        
+	      </div>
+	  </div> <!-- End of rows div -->
+	 </div>  <!-- End of Modal --> 
+
+	 <!-- Start Modal -->
+	  <div class="modal modal-popout-bg fade animated zoomIn delay-1" id="myModal3">
+	    <div class="modal-dialog modal-dialog-centered">
+	      <div class="modal-content">
+	      
+	        <!-- Modal Header -->
+	        <div class="modal-header">
+	          <h3 class="modal-title font-style">Benefícios do Amazon Prime</h3>
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        </div>
+	        
+	        <!-- Modal body -->
+	        <div class="modal-body animated zoomIn delay-1">
+				<p>&#10004; Jogos e itens gratuitos.</p>
+				<p>&#10004; Subscriber em um canal da Twitch todo mês e loots em jogos com o <a href="https://gaming.amazon.com/home" target="blank">Prime Gaming</a></p>
+				<p>&#10004; Séries e filmes com o <a href="https://www.primevideo.com/" target="_blank">Prime Video</a></p>
+				<p>&#10004; Frete grátis, rápido e ilimitado sem valor mínimo na loja da Amazon.</p>
+				<p>&#10004; Acesso antecipado a Ofertas relâmpago de jogos, eletrônicos, marcas exclusivas e descontos</p>
+				<p>&#10004; Acesso a mais de 2 milhões de músicas com o <a href="https://www.amazon.com.br/music/prime" target="_blank">Prime Music</a></p>
+				<p>&#10004; Acesso a centenas de eBooks e revistas com o <a href="https://www.amazon.com/kindle-dbs/fd/nonprime-pr/ref=insider_ar_reading_strtbksrs" target="_blank">Prime Reading</a></p>
+				<p>Teste gratuito de 30 dias. Apenas R$9,90 por mês após o teste. Cancele a qualquer momento.</p>
+	        </div>
+	        
+	        <!-- Modal footer -->
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Entendi.</button>
+	        </div>
+        
+	      </div>
+	  </div> <!-- End of rows div -->
+	 </div>  <!-- End of Modal --> 
+
+	 <!-- Start Modal -->
+	  <div class="modal modal-popout-bg fade animated zoomIn delay-1" id="myModal4">
+	    <div class="modal-dialog modal-dialog-centered">
+	      <div class="modal-content">
+	      
+	        <!-- Modal Header -->
+	        <div class="modal-header">
+	          <h3 class="modal-title font-style">Como funciona o Incent</h3>
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        </div>
+	        
+	        <!-- Modal body -->
+	        <div class="modal-body animated zoomIn delay-1">
+				<p>&#10004; Cada código resgatado equivale a &#36;0,03 (Dólares Australianos) o que corresponde a R&#36;0,11 (Centavos) .</p>
+				<p>&#10004; Você pode juntar esses dólares e doar ao seu streamer favorito</p>
+				<p>&#10004; O código pode ser inserido em <a href="https://get.incent.com/" target="_blank">Get Incent</a></p>
+	        </div>
+	        
+	        <!-- Modal footer -->
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Entendi.</button>
+	        </div>
+        
+	      </div>
+	  </div> <!-- End of rows div -->
+	 </div>  <!-- End of Modal --> 
 					
 		<!-- Highlights -->
 			<section class="wrapper font-style">
 				<div class="inner">
-					<header class="special">
+					<header class="special" data-aos="zoom-in">
 						<h2>Sobre a nossa live</h2>
 						<p>Além do entretenimento e da interação com o chat, nossa live possui diversas brincadeiras e premiações de acordo com metas, confira melhor abaixo:</p>
 					</header>
 					<div class="highlights">
-						<section class="animatedHighlights animated fadeInLeft">
+						<section class="animatedHighlights" data-aos="fade-down-right">
 							<div class="content">
 								<header>
-									<a href="#" class="icon fa-gift" data-toggle="modal" data-target="#myModal"><span class="label">Icon</span></a>
+									<a href="#" class="icon fa-gift" data-toggle="modal" data-target="#myModal" data-backdrop="static"><span class="label">Icon</span></a>
 									<h3>Sorteios de skins</h3>
 								</header>
-								<p>Sorteios de skins por metas de visualizações e pelos contribuidores do <a href="https://twitch.amazon.com/tp" target="_blank"><strong class="twitch-color">Twitch prime.</strong></a></p>
+								<p>Sorteios de skins por metas de visualizações</p>
 							</div>
 						</section>
-						<section class="animatedHighlights animated fadeInLeft">
+						<section class="animatedHighlights" data-aos="fade-down">
 							<div class="content">
 								<header>
 									<a href="https://streamelements.com/siimpsonss/tip" class="icon fa-dollar" target="_blank"><span class="label">Icon</span></a>
 									<h3>Doação</h3>
 								</header>
 								<p>Contribua para ajudar a live a se desenvolver e aumentar o número de sorteios.</p>
-								<p>Dependendo do valor, poderá pedir um mico ou um cos<strong>pobre</strong></p>
+								<p>As doações me ajudam a realizar os sorteios e inclusive fazer uns cos<strong>pobre</strong> de vez em quando, você pode visualizar os cos<strong>pobres</strong><a href="gallery.html"> aqui</a></p>
 							</div>
 						</section>
-						<section class="animatedHighlights animated fadeInLeft">
+						<section class="animatedHighlights" data-aos="fade-down-left">
 							<div class="content">
 								<header>
-									<a id="invite" href="#" class="icon fa-users"><span class="label">Icon</span></a>
+									<a id="invite" href="#invite" class="icon fa-users"><span class="label">Icon</span></a>
 									<h3>Chame um amigo</h3>
 								</header>
 								<p>Divulgue a live e convide pelo menos um amigo pra assistir junto com você.</p>
 								<input class="inputhidden" id="linkLive" value="https://www.twitch.tv/siimpsonss">
 							</div>
 						</section>
-						<section class="animatedHighlights2 animated fadeInLeft">
+						<section class="animatedHighlights2" data-aos="fade-up-right">
 							<div class="content">
 								<header>
-									<a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
-									<h3>Crescimento</h3>
+									<a href="#" data-toggle="modal" data-target="#myModal4" data-backdrop="static"><img class="incent " src="images/incent.png" alt="Prime"><span class="label"></span></a>
+									<h3>Incent</h3>
 								</header>
-								<p>Agora somos <strong>afiliados</strong> e precisamos bater a meta de <strong>75 Viweres</strong> por dia.</p>
+								<p>Ganhe dólares enquanto assiste uma transmissão ao vivo</p>
 							</div>
 						</section>
-						<section class="animatedHighlights2 animated fadeInLeft">
+						<section class="animatedHighlights2" data-aos="fade-up">
 							<div class="content">
 								<header>
-									<a href="#" class="icon fa-bell"><span class="label">Icon</span></a>
-									<h3>Notificação da Twitch</h3>
+									<a href="#" data-toggle="modal" data-target="#myModal3" data-backdrop="static"><img class="prime-chest " src="images/primecapsule.png" alt="Prime"><span class="label"></span></a>
+									<h3 class="prime">Prime Gaming</h3>
 								</header>
-								<p>É importante que você habilite o sininho na <a href="https://twitch.tv/siimpsonss" target="_blank"><strong class="twitch-color">Twitch</strong></a> para receber a notificação de quando a live estiver on.</p>
-								<p>Você pode fazer isso agora, clicando sobre o nome Twitch, destacado em roxo.</p>
+								<p>Diversos benefícios incluídos, além de você poder ajudar o Canal com um sub gratuito<br><br><a href="https://www.twitch.tv/subs/SiimpSonSs" target="_blank">Inscreva-se aqui</a></p>
+								<p>Veja mais em <a href="https://www.amazon.com.br/prime" target="_blank"> Amazon Prime.</a></p>
 							</div>
 						</section>
-						<section class="animatedHighlights2 animated fadeInLeft">
+						<section class="animatedHighlights2" data-aos="fade-up-left">
 							<div class="content">
 								<header>
-									<a href="#" class="icon fa-balance-scale"><span class="label">Icon</span></a>
+									<a href="#" class="icon fa-balance-scale"  data-toggle="modal" data-target="#myModal2" data-backdrop="static"><span class="label">Icon</span></a>
 									<h3>Mantenha o equílibrio</h3>
 								</header>
 								<p>Interaja no chat, mas com respeito aos demais.</p>
@@ -168,68 +354,72 @@
 			</section>
 
 		<!-- CTA -->
-			<section id="cta" class="wrapper">
+			<section id="cta" class="wrapper" data-aos="fade-up"
+				data-aos-duration="3000">
 			</section>
 
-			<section class="wrapper font-style text-center">
-				<hr>
-				<h2>Cheque se a stream está online por aqui</h2>
-				<button class="btn-section-live"><a href="https://dlive.tv/Simpsonss" target="_blank">Quero assistir!</a></button>
-				<div class="section-live">
-					<iframe class="section-iframe" src="https://dlive.tv/Simpsonss" title="SimpSonSs"></iframe>
+			<section class="wrapper font-style text-center" id="sectionweb">
+				<div class="fire">
+				<a href="https://www.twitch.tv/siimpsonss" target="_blank" class="btn-section-live" data-aos="zoom-in">Quero assistir!</a>
 				</div>
+				<svg>
+					<filter id="fireSvg">
+						<feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3"></feTurbulence>
+						<feDisplacementMap in="SourceGraphic" scale="6"></feDisplacementMap>
+					</filter>
+				</svg>
 				<hr>
+				<h2 data-aos="fade-left" class="not whisper bubble">Siga e ative o sininho<br>de notificações</h2>
+				<div data-aos="fade-right" class="sectionweb-cel">
+					<img class="cel" src="images/cel.png"> 
+					<img src="images/simp.jpeg" alt="" class="cel-inner">	
+					<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bd13529-73af-4ca9-96c4-f99b4c262d17/dcnphcn-7da7c2cd-e836-410b-a216-9c945f1661e7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNGJkMTM1MjktNzNhZi00Y2E5LTk2YzQtZjk5YjRjMjYyZDE3XC9kY25waGNuLTdkYTdjMmNkLWU4MzYtNDEwYi1hMjE2LTljOTQ1ZjE2NjFlNy5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.2sL3W-OwndEZJq3W9dAUTSPDvOAJjidESDIMsvEow3k" alt="Yasuo Gif" class="yasu">
+				</div>
+
+				<div data-aos="fade-left" class="sectionweb-cel">
+					<img class="pc" src="images/pc.png"> 
+				</div>
+						
 			</section>
 
 		<!-- Testimonials -->
-			<section class="wrapper font-style champs">
+			<section class="wrapper font-style champs" data-aos="zoom-in-up">
 				<div class="inner">
 					<header class="special">
-						<h2>Campeões mais jogados - Season 9</h2>
-						<p>Esses foram os 3 campões com mais jogos em 2019, está curioso pra saber com o que eu estou jogando agora?.</p>
-						<p>Vem comigo pra <a href="https://twitch.tv/siimpsonss" target="_blank"><strong class="twitch-color">Twitch</strong></a></p>
+						<h2>Formulário de Contato</h2>
 					</header>
-					<div class="testimonials">
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>O lendário <strong>Yasuo,</strong> com 97 jogos no total.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img class="champion-img" src="images/yasuo.png" alt="0/10" />
-									</div>
-									<p class="credit">- <strong>Yasuo</strong> <span>o Imperdoável.</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>O segundo mais jogado foi o <strong>Sylas,</strong> com 65 jogos no total.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img class="champion-img" src="images/sylas.png" alt="Sylas" />
-									</div>
-									<p class="credit">- <strong>Sylas</strong> <span>o Abjugado.</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Em terceiro lugar o <strong>Veigar,</strong> com 58 jogos no total.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img class="champion-img" src="images/veigar.png" alt="Veigar" />
-									</div>
-									<p class="credit">- <strong>Veigar</strong> <span>o Pequeno Mestre do Mal.</span></p>
-								</div>
-							</div>
-						</section>
-					</div>
+					<form action="mail.php" method="POST" id="formContato">
+						<div class="form-group">
+							<label for="nome">Nome</label>
+							<input class="form-control" type="text" name="nome" id="nome" placeholder="Insira o seu nome">
+						</div>
+
+						<div class="form-group">
+							<label for="nome">Nick</label>
+							<input class="form-control" type="text" name="nick" id="nick" placeholder="Insira o seu nick da live">
+						</div>
+
+						<div class="form-group">
+							<label for="email">E-mail</label>
+							<input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email">
+						</div>
+
+						<div class="form-group">
+							<label for="celular">Celular</label>
+							<input class="form-control" type="text" name="celular" id="celular" placeholder="Insira seu celular">
+						</div>
+
+						<div class="form-group">
+							<label for="mensagem">Mensagem</label>
+							<textarea name="mensagem" cols="40" rows="10" id="mensagem" placeholder="Digite sua mensagem" onkeyup="countLetters();"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Total de digitos: <span class="count">0</span><p>Limite de 2500 caracteres</p></label>
+						</div>
+												
+						<input class="form-control" type="submit" value="Enviar">
+					</form>
+					
 				</div>
 			</section>
 
@@ -237,45 +427,45 @@
 			<footer id="footer">
 				<div class="inner">
 					<div class="content">
-						<section>
+						<section data-aos="zoom-in-right">
 							<h3><strong>Sobre esse site.</strong></h3>
 							<p>Esse site foi desenvolvido com um template base e foram realizadas modificações e adaptações de acordo com a necessidade.</p>
-							<p>O objetivo é apenas divulgar a live e contar um pouco como foi o caminho até aqui, quais foram os primeiros passos e primeiras plataformas e sobre os <a href="projects.html">projetos</a> no qual eu estou envolvido para que o público mais novo junte-se a nós e conheça melhor a nossa <strong>historia!</strong></p>
+							<p>O objetivo é apenas divulgar a live e contar um pouco como foi o caminho até aqui, quais foram os primeiros passos e primeiras plataformas e sobre os <a href="projects.html">projetos</a> no qual eu estou envolvido para que o público mais novo junte-se a nós e conheça melhor a nossa <strong>família!</strong></p>
 						</section>
-						<section>
+						<section data-aos="zoom-in">
 							<h4><strong>Entre em contato</strong></h4>
 							<ul class="alt">
 								<li class="contact-li">Página do SimpSonSs no Facebook.</li>
-								<li class="contact-li">Instagram pessoal.</li>
+								<li class="contact-li">Instagram da live.</li>
 								<li class="contact-li">Me mande mensagem no WhatsApp.</li>
 								<li class="contact-li">Canal no YouTube.</li>
 								<li class="contact-li">Venha me assistir na Twitch TV.</li>
 								<li class="contact-li">Venha me assistir na DLive.TV.</li>
 							</ul>
 						</section>
-						<section>
-							<h4><strong>Minhas Redes sociais</strong></h4>
+						<section data-aos="zoom-in-left">
+							<h4><strong class="copy-sociais">Redes sociais</strong></h4>
 							<ul class="plain">
 								<li><a href="https://www.facebook.com/livesimpsonss/" target="_blank"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
 
-								<li><a href="https://www.instagram.com/livesimpsonss/" target="_blank"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="https://www.instagram.com/casal_simpsonss/" target="_blank"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
 
-								<li><a href="https://wa.me/5521975472741" target="_blank"><i class="icon fa-whatsapp">&nbsp;</i>WhatsWeb</a></li>
+								<li><a href="https://wa.me/5521975472741" target="_blank"><i class="icon fa-whatsapp">&nbsp;</i>WhatsApp</a></li>
 
 								<li><a href="https://www.youtube.com/channel/UC30gJAc1yWUmi9NSsFMkhVg?sub_confirmation=1" target="_blank"><i class="icon fa-youtube-play">&nbsp;</i>Youtube</a></li>
 
 								<li><a href="https://www.twitch.tv/siimpsonss" target="_blank"><i class="icon fa-twitch">&nbsp;</i>Twitch</a></li>
 
-								<li><a href="https://dlive.tv/SimpSonSs" target="_blank" class="footer-img-style"><img class="footer-img" src="images/dlive.png"></a><a href="https://dlive.tv/SimpSonSs" target="_blank">DLive</a></li>
+								<li><a href="https://dlive.tv/SimpSonSs" target="_blank" class="footer-img-style"><img class="footer-img" src="images/dlive.png" alt="Dlive logo"></a><a href="https://dlive.tv/SimpSonSs" target="_blank">DLive</a></li>
 							</ul>
 						</section>
 					</div>
 					<div class="copyright">
 							&copy; Luiz "SimpSonsS" Guilherme. 2020.
 						<div class="copy-details">
-	                        <br><br>Créditos dedicados ao modelo desenvolvido por
-	                        <a href="https://templated.co/industrious" target="_blank">TEMPLATED</a> sob a licença <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Atributtion 3.0</a>
-	                        <a id="back" href="#banner" class="fa fa-arrow-up back-to-home" aria-hidden="true"></a>
+	                        <br><br>Créditos dedicados ao modelo <a href="https://templated.co/industrious" target="_blank">INDUSTRIOUS</a> desenvolvido por
+	                        <a href="https://templated.co/" target="_blank">TEMPLATED</a> sob a licença <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Atributtion 3.0</a>
+	                        <a id="back" href="#banner" class="fa fa-arrow-up back-to-home tooltip-secondary" title="Voltar para o topo" aria-hidden="true"></a>
 						</div>
 					</div>
 				</div>
@@ -290,6 +480,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		    <script>
+		    	AOS.init({
+		    				duration: 2200,
+		    			});
 
+		    	const textarea = document.querySelector('textarea');
+		    	const count = document.querySelector('.count');
+
+		    	function countLetters() {
+		    		const text = textarea.value;
+		    		const textLength = textarea.value.length;
+		    		count.innerText = `${textLength}`;
+
+		    		if (textLength >= 2500) {
+		    			 $('.count').addClass('error');
+		    		} else {
+		    			$('.count').removeClass('error');
+		    		}
+		    	}
+		    </script>
 	</body>
 </html>

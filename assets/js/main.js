@@ -3,6 +3,9 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+
+document.write(unescape("%3Cscript src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js' type='text/javascript'%3E%3C/script%3E"));
+
 (function($) {
 
 	var	$window = $(window),
@@ -49,7 +52,8 @@ $('#invite').click(function(){
     $('#linkLive').select();
     try {
             var ok = document.execCommand('copy');
-            if (ok) { alert('Link da stream copiado para a área de transferência!'); }
+            if (ok) {swal("Link da stream copiado com sucesso!", "Basta usar CTRV + V na barra de pesquisa do navegador", "success");
+ }
         } catch (e) {
         alert(e)
     }
@@ -62,9 +66,15 @@ function manual() {
 		
 }
 
-$(document).ready(function() {
-	$('#back').click(function(){
-		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
-	});
+/* Smoth scroll */
+ jQuery(document).ready(function($) {
+   $("#back").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+   });
+  });
+
+ /* Alert */
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
 });

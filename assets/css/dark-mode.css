@@ -1,3 +1,43 @@
+[data-theme="dark"] .iptv-categories h4 {
+  color: #fff !important;
+}
+
+[data-theme="dark"] .iptv ul li strong, b {
+  color: #fff !important;
+}
+
+[data-theme="dark"] .crono li {
+  border-bottom: 1px solid #fff;
+}
+
+[data-theme="dark"] .swiper-slide {
+  background-color: #444444;
+}
+
+[data-theme="dark"] .indicadores {
+  color: #fff !important;
+}
+
+[data-theme="dark"] ::selection {
+  background: #555555;
+}
+
+[data-theme="dark"] #footer .copyright #back {
+  color: #000 !important;
+}
+
+[data-theme="dark"] #footer .copyright #back:hover {
+  color: #fff !important;
+}
+
+[data-theme="dark"] .fab {
+   color: #fff !important;
+}
+
+[data-theme="dark"] .icon-iptv {
+   color: #000 !important;
+}
+
 [data-theme="dark"] .navbar img {
   filter: invert(1);
 }
@@ -32,31 +72,42 @@
 }
 
 [data-theme="dark"] a {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 [data-theme="dark"] header.special p {
-    color: #555555 !important;
+  color: #fff;
 }
 
-[data-theme="dark"] .modal-body p {
-    color: #000 !important;
+[data-theme="dark"] .btn-secondary {
+  background-color: #000 !important;
+  border-color: #fff !important;
+}
+
+[data-theme="dark"] .modal-body p, .modal-title {
+  color: #fff;
+}
+
+[data-theme="dark"] .modal-content {
+  background-color: rgba(0, 0, 0, .7);
 }
 
 [data-theme="dark"] a:hover {
     color: #ce1b28 !important;
 }
 
-[data-theme="dark"] .btn-section-live a {
-    color: #000 !important;
-}
-
-[data-theme="dark"] .btn-section-live a:hover {
+[data-theme="dark"] .btn-section-live {
     color: #fff !important;
 }
 
+[data-theme="dark"] .btn-section-live:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000 !important;
+  box-shadow: 0 0 30px 0 rgba(0,0,0, 0.9);
+  transition: all 0.2s ease-out;
+}
+
 [data-theme="dark"] .section-live a:active {
-    background-color: #C0C0C0;
     color: #fff !important;
 }
 
@@ -86,6 +137,10 @@
 
 [data-theme="dark"] header a:hover{
   color: #ce1b28;
+}
+
+[data-theme="dark"] header h2{
+  color: #fff;
 }
 
 [data-theme="dark"] footer a:hover{
