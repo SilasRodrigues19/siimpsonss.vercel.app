@@ -1,0 +1,33 @@
+.swal-modal {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.swal-title, .swal-text {
+	color: #000 !important;
+}
+
+.swal-button {
+    background-color: #a5dc86 !important;
+    color: #fff !important;
+    border: none;
+    box-shadow: none !important;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 3px 24px !important;
+    margin: 0;
+    cursor: pointer;
+}
+
+.swal-button:hover {
+	background-color: #111111;
+  color: #000 !important;
+}
+
+.swal-button:active, .swal-button:not([disabled]):hover {
+	background-color: #1e1e1e;
+}
+
+.swal-icon--success:after, .swal-icon--success:before, .swal-icon--success__hide-corners {
+	background-color: transparent;
+}

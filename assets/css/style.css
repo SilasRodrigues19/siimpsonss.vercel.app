@@ -1,5 +1,5 @@
 @import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
-
+@import url('swal.css');
 #sectionweb {
   user-select: none;
 }
@@ -50,7 +50,7 @@ svg {
     left: 173px;
 }
 
-h2.bubble { 
+h2.bubble {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: 100% 100%;
@@ -61,13 +61,13 @@ h2.bubble {
   line-height: 1;
 }
 h2.speech {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
   width: 25%;
   padding-top: 6%;
   padding-bottom: 20%;
 }
 h2.whisper {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg);
   width: 25%;
   font-size: 2vw;
   color: #ccc;
@@ -75,7 +75,7 @@ h2.whisper {
   padding: 6% 5% 15%;
 }
 h2.electric {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg); 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
   width: 25%;
   font-size: 2.4vw;
   font-style: italic;
@@ -95,23 +95,6 @@ h2.electric span {
   height: 34.5rem;
   right: 32.1rem;
   border-radius: 5px;
-}
-
-.swal-button {
-    background-color: #7cd1f9 !important;
-    color: #fff !important;
-    border: none;
-    box-shadow: none !important;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 3px 24px !important;
-    margin: 0;
-    cursor: pointer;
-}
-
-.swal-button:hover {
-  color: #000 !important;
 }
 
 .twitch-color {
@@ -294,7 +277,7 @@ h2.electric span {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.pexels.com/photos/4038853/pexels-photo-4038853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.pexels.com/photos/4038853/pexels-photo-4038853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,7 +309,7 @@ h2.electric span {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/cta01.jpg");  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/cta01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -499,6 +482,10 @@ img {
   margin: -1% 0 -1% 0;
 }
 
+.content-gallery .gallery-tips p:nth-child(2) {
+  display: none;
+}
+
 .content-gallery header p {
   text-align: center;
 }
@@ -526,7 +513,7 @@ img {
   left: 0;
   display: block;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 .champion-img {

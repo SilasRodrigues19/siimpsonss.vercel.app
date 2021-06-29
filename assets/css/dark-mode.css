@@ -158,3 +158,16 @@
 [data-theme="dark"] .bg-black {
   background-color: #eee !important;
 }
+
+/* Swal Alert */
+[data-theme="dark"] .swal-modal {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .swal-modal .swal-title {
+	color: #fff !important;
+}
+
+[data-theme="dark"] .swal-modal .swal-text {
+	color: #fff !important;
+}

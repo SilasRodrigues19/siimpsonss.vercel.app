@@ -52,7 +52,7 @@ $('#invite').click(function(){
     $('#linkLive').select();
     try {
             var ok = document.execCommand('copy');
-            if (ok) {swal("Link da stream copiado com sucesso!", "Basta usar CTRV + V na barra de pesquisa do navegador", "success");
+            if (ok) {swal("Link da stream copiado com sucesso!", "Basta colar na barra de pesquisa do navegador", "success");
  }
         } catch (e) {
         alert(e)
@@ -63,7 +63,7 @@ $('#invite').click(function(){
 function manual() {
 
 	$("#myModal").modal();
-		
+
 }
 
 /* Smoth scroll */
@@ -76,5 +76,5 @@ function manual() {
 
  /* Alert */
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+  $('[data-toggle="tooltip"]').tooltip();
 });

@@ -115,7 +115,7 @@ html {
       }
       .font-style {
       font-family: 'Yusei Magic', sans-serif !important;
-      } 
+      }
     }
   @media screen and (max-width: 570px) {
     .gallery {
@@ -131,7 +131,7 @@ html {
           max-width: 70%;
           height: 81px;
           line-height: 2.5rem !important;
-        } 
+        }
       .fire a {
         font-size: 1.5em !important;
       }
@@ -155,7 +155,7 @@ html {
         font-size: 0.8rem !important;
         opacity: 0.5 !important;
         padding: 2rem 0.5rem 0 0 !important;
-        text-align: center !important; 
+        text-align: center !important;
       }
       ul.plain {
         display: grid;
@@ -564,7 +564,7 @@ input[type="radio"] {
       text-align: center;
       top: -0.1625rem;
       width: 1.95rem; }
-      
+
   input[type="radio"]:checked + label:before {
     content: '\f00c'; }
 
@@ -837,12 +837,18 @@ table.alt tbody tr td {
     .highlights .content {
       padding: 2rem; } }
   @media screen and (max-width: 736px) {
+    .lb-nav a.lb-prev, .lb-nav a.lb-next {
+      opacity: .5 !important;
+    }
     ul.plain {
     display: grid;
-    grid-template-columns: 200px 200px !important;
-    grid-gap: 15px;
-    margin: 25px 0px 0px 50px;
-    padding: 0 20px 0 20px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 80px 80px;
+    margin-top: 25px;
+    padding-left: 20px;
+     }
+     ul.plain li {
+       margin: 0px;
      }
     .copy-sociais {
       display: flex;
@@ -2151,11 +2157,12 @@ ul.icons {
       height: 45px !important;
       font-size: 12px !important;
     }
-    /*
-    .content-gallery header p, strong {
+    .content-gallery .gallery-tips p:nth-child(1), .content-gallery .gallery-tips p:nth-child(3) {
       display: none;
     }
-    */
+    .content-gallery .gallery-tips p:nth-child(2) {
+      display: unset !important;
+    }
     .swiper-container {
       width: 80% !important;
     }
