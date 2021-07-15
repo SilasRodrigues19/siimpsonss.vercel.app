@@ -317,6 +317,6 @@ Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https:
 [issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
 [issues-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/issues
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
-[license-url]: https://www.apache.org/licenses/LICENSE-2.0
+[license-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/blob/master/LICENSE
 [product-screenshot]: images/screenshot.png
 
