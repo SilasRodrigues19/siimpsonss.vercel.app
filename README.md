@@ -32,19 +32,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -58,11 +47,11 @@
 This project was built for an Streamer at Twitch TV, the main goal is to tell a little bit about livestream and the personal life of Streamer.
 
 The website is divided into:
-* Home: describes about livestream and contains the main content as links, interations from livestream, contact form and more.
-* About: as the name suggests it's a page that talks about Luiz "SiimpSonsS" Guilherme and your livestream, contains livestream's schedule and because he decided start do livestreams.
-* Projects: has all projects that the streamer is involved at the moment.
-* Donors: specific page that show all people who donated in the livestream.
-* Gallery: has all "cospobres" made by SiimpSonsS (cospobres are cosplays made with little resource).
+* **Home**: describes about livestream and contains the main content as links, interations from livestream, contact form and more.
+* **About**: as the name suggests it's a page that talks about Luiz "SiimpSonsS" Guilherme and your livestream, contains livestream's schedule and because he decided start do livestreams.
+* **Projects**: has all projects that the streamer is involved at the moment.
+* **Donors**: specific page that show all people who donated in the livestream.
+* **Gallery**: has all "cospobres" made by SiimpSonsS (cospobres are cosplays made with little resource).
 
 ### Built With
 
@@ -86,12 +75,6 @@ Technologies used in the project.
 * [jQuery Mask](https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html)
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the Apache License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -101,6 +84,10 @@ Silas Rodrigues - [@jinuye1](https://twitter.com/jinuye1) - silasrodrigues.fatec
 Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https://github.com/SilasRodrigues19/siimpsonss.vercel.app)
 
 
+<!-- LICENSE -->
+## License
+
+Distributed under the Apache License. See `LICENSE` for more information. Or read below.
 
 
                                  Apache License
