@@ -1,5 +1,6 @@
-[![Stargazers][https://img.shields.io/github/stars/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge]][https://github.com/SilasRodrigues19/siimpsonss.vercel.app/stargazers]
-[![Apache License][https://img.shields.io/badge/License-Apache%202.0-blue.svg]][https://www.apache.org/licenses/LICENSE-2.0]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -303,3 +304,19 @@ Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https:
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+   
+   
+   <!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[contributors-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[forks-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/network/members
+[stars-shield]: https://img.shields.io/github/stars/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[stars-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[issues-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/issues
+[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[license-url]: https://www.apache.org/licenses/LICENSE-2.0
+[product-screenshot]: images/screenshot.png
+
