@@ -1,5 +1,5 @@
-[![Stargazers][stars-shield]][stars-url]
-[![Apache License][license-shield]][https://www.apache.org/licenses/LICENSE-2.0]
+[![Stargazers][https://img.shields.io/github/stars/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge]][https://github.com/SilasRodrigues19/siimpsonss.vercel.app/stargazers]
+[![Apache License][https://img.shields.io/badge/License-Apache%202.0-blue.svg]][https://www.apache.org/licenses/LICENSE-2.0]
 
 
 <!-- PROJECT LOGO -->
