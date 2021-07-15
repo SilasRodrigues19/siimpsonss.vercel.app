@@ -1,6 +1,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![CC By 4.0][license-shield]][license-url]
+[![CC BY 4.0][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -102,7 +102,7 @@ SiimpSonsS Livestream © 2019 by Silas Rodrigues is licensed under CC BY 4.0. To
 [stars-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/stargazers
 [issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
 [issues-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/issues
-[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/blob/master/LICENSE
 [product-screenshot]: https://i.ibb.co/9G0dTHq/preview.png
 
