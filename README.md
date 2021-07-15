@@ -305,5 +305,5 @@ Distributed under the Apache License. See `LICENSE` for more information. Or rea
 [issues-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/issues
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/blob/master/LICENSE
-[product-screenshot]: https://i.ibb.co/RHkdJQ0/about-view.png
+[product-screenshot]: https://i.ibb.co/9G0dTHq/preview.png
 
