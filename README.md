@@ -32,8 +32,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -75,6 +75,13 @@ Technologies used in the project.
 * [jQuery Mask](https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html)
 
 
+<!-- LICENSE -->
+## License
+
+This work is licensed under a CC BY 4.0 License. See `LICENSE` for more information. Or visit the link below.
+
+SiimpSonsS Livestream © 2019 by Silas Rodrigues is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
 
 <!-- CONTACT -->
 ## Contact
@@ -83,14 +90,6 @@ Silas Rodrigues - [@jinuye1](https://twitter.com/jinuye1) - silasrodrigues.fatec
 
 Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https://github.com/SilasRodrigues19/siimpsonss.vercel.app)
 
-
-<!-- LICENSE -->
-## License
-
-This work is licensed under a CC BY 4.0 License. See `LICENSE` for more information. Or visit the link below.
-
-SiimpSonsS Livestream © 2019 by Silas Rodrigues is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
-   
    
    <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
