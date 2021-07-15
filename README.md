@@ -87,7 +87,7 @@ Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https:
 <!-- LICENSE -->
 ## License
 
-Distributed under the CC BY 4.0 License. See `LICENSE` for more information. Or visit the link below.
+This work is licensed under a CC BY 4.0 License. See `LICENSE` for more information. Or visit the link below.
 
 SiimpSonsS Livestream © 2019 by Silas Rodrigues is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
    
