@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![About View][https://i.ibb.co/RHkdJQ0/about-view.png]](https://siimpsonss.vercel.app/about.html)
+[![About View][product-screenshot]](https://siimpsonss.vercel.app/about.html)
 
 This project was built for an Streamer at Twitch TV, the main goal is to tell a little bit about livestream and the personal life of Streamer.
 
@@ -318,5 +318,5 @@ Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https:
 [issues-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/issues
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/blob/master/LICENSE
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://i.ibb.co/RHkdJQ0/about-view.png
 
