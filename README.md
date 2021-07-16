@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://siimpsonss.vercel.app">
-    <img src="https://siimpsonss.vercel.app/images/simp.png" alt="Logo" width="80" height="80">
+    <img src="https://siimpsonss.vercel.app/images/simp.png" alt="Logo" width="80" height="120">
   </a>
 
   <h3 align="center">SiimpSonsS Livestream</h3>
