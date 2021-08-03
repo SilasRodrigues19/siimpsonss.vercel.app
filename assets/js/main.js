@@ -1,10 +1,3 @@
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-document.write(unescape("%3Cscript src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js' type='text/javascript'%3E%3C/script%3E"));
 
 (function($) {
 
@@ -78,3 +71,12 @@ function manual() {
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+
+let themeSwitch = document.querySelector('.themeSwitch');
+let body = document.querySelector('body');
+
+// Theme Switch Toggle
+themeSwitch.onclick = function() {
+	body.classList.toggle('dark')
+}

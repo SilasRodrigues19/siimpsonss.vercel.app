@@ -8,22 +8,28 @@
 	<head>
 		<title>SimpSonSs - Doações</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Site para divulgação da live do SimpSonsS" />
 		<meta name="keywords" content="SimpSonsS, Streamer, Criador de counteúdo, Entretenimento" />
 		<link rel="shortcut icon" type="image/png" href="images/simp.png" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/dark-mode.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  		<script src="js/swiper-bundle-min.js"></script>
+
+
   		<!-- Demo styles -->
   		    <style>
   		        .swiper-container {
@@ -57,6 +63,7 @@
   		        	flex-direction: column;
   		        }
   		    </style>
+
 	</head>
 	<body class="is-preload">
 
@@ -64,15 +71,12 @@
 			<header id="header" class="font-style">
 				<a class="logo" href="index.html">Início</a>
 				<nav class="navbar">
-					<h3 class="navbar-brand mr-2 mt-3">Tema<img src="images/moon.png" alt="Lua"></h3>
+					<h3 class="navbar-brand"></h3>
 					<nav class="navbar-nav">
 						<div class="nav-link">
-							<div class="custom-control custom-switch">
-								<label class="custom-control-label mt-3 mr-5" for="darkSwitch">
-									<input type="checkbox" class="custom-control-input mt-3" id="darkSwitch">
-								  	<span class="slider round"></span>
-								</label>
-							</div>
+							<label class="themeSwitch" for="darkSwitch" data-toggle="tooltip" title="Clique para mudar o tema">
+								<input type="checkbox" class="custom-control-input mt-3" id="darkSwitch">
+							</label>
 						</div>
 					</nav>
 					<a href="#menu">Menu</a>
@@ -264,15 +268,13 @@
 		    </script>
 
 		<!-- Scripts -->
-			<script src="assets/js/bootstrap.min.js"></script>
-			<script src="assets/js/popper.js"></script>
 			<script src="assets/js/dark-mode-switch.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		    <script>
 		    	AOS.init({
 		    				duration: 2200,

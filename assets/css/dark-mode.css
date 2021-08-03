@@ -171,3 +171,49 @@
 [data-theme="dark"] .swal-modal .swal-text {
 	color: #fff !important;
 }
+
+
+.themeSwitch::before {
+  content: '\f185';
+  font-family: fontAwesome;
+}
+
+[data-theme="dark"] .themeSwitch::before {
+  content: '\f186';
+  font-family: fontAwesome;
+}
+
+.themeSwitch::after {
+  content: 'Light';
+  position: absolute;
+  left: 40px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .themeSwitch::after {
+  content: 'Dark';
+}
+
+.themeSwitch {
+  position: absolute;
+  top: 9px;
+  right: 270px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #111;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+
+}
