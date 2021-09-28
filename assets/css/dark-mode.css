@@ -31,11 +31,11 @@
 }
 
 [data-theme="dark"] .fab {
-   color: #fff !important;
+  color: #fff !important;
 }
 
 [data-theme="dark"] .icon-iptv {
-   color: #000 !important;
+  color: #000 !important;
 }
 
 [data-theme="dark"] .navbar img {
@@ -59,7 +59,7 @@
 }
 
 [data-theme="dark"] {
-  background-image: linear-gradient(to right, rgba(111,111,111,1), rgba(255,255,255,1)) !important;
+  background-image: linear-gradient(to right, rgba(111, 111, 111, 1), rgba(255, 255, 255, 1)) !important;
   color: #fff;
 }
 
@@ -67,8 +67,12 @@
   color: #fff;
 }
 
+[data-theme="dark"] .highlights .content .icon {
+  color: #fff;
+}
+
 [data-theme="dark"] .highlights .content .icon:hover {
-  color: #090f0f !important;
+  color: #090f0f;
 }
 
 [data-theme="dark"] a {
@@ -93,37 +97,37 @@
 }
 
 [data-theme="dark"] a:hover {
-    color: #ce1b28 !important;
+  color: #ce1b28 !important;
 }
 
 [data-theme="dark"] .btn-section-live {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 [data-theme="dark"] .btn-section-live:hover {
+  color: #fff !important;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #000 !important;
-  box-shadow: 0 0 30px 0 rgba(0,0,0, 0.9);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.9);
   transition: all 0.2s ease-out;
 }
 
 [data-theme="dark"] .section-live a:active {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 [data-theme="dark"] section .content p strong.twitch-color {
-    color: #9147FF !important;
+  color: #9147FF !important;
 }
 
 [data-theme="dark"] section .content {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
-[data-theme="dark"] section .content h2{
+[data-theme="dark"] section .content h2 {
   color: #fff;
 }
 
-[data-theme="dark"] section .content p{
+[data-theme="dark"] section .content p {
   color: #fff;
 }
 
@@ -131,19 +135,19 @@
   color: #fff !important;
 }
 
-[data-theme="dark"] header a{
+[data-theme="dark"] header a {
   color: #fff;
 }
 
-[data-theme="dark"] header a:hover{
+[data-theme="dark"] header a:hover {
   color: #ce1b28;
 }
 
-[data-theme="dark"] header h2{
+[data-theme="dark"] header h2 {
   color: #fff;
 }
 
-[data-theme="dark"] footer a:hover{
+[data-theme="dark"] footer a:hover {
   color: #ce1b28 !important;
 }
 
@@ -160,18 +164,18 @@
 }
 
 /* Swal Alert */
+
 [data-theme="dark"] .swal-modal {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
 [data-theme="dark"] .swal-modal .swal-title {
-	color: #fff !important;
+  color: #fff !important;
 }
 
 [data-theme="dark"] .swal-modal .swal-text {
-	color: #fff !important;
+  color: #fff !important;
 }
-
 
 .themeSwitch::before {
   content: '\f185';
@@ -214,6 +218,4 @@
   align-items: center;
 }
 
-.dark {
-
-}
+.dark {}
