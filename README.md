@@ -1,4 +1,5 @@
 [![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![CC BY 4.0][license-shield]][license-url]
 
@@ -99,6 +100,8 @@ Project Link: [https://github.com/SilasRodrigues19/siimpsonss.vercel.app](https:
 [forks-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/network/members
 [stars-shield]: https://img.shields.io/github/stars/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
 [stars-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/stargazers
+[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
+[forks-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/network/members
 [issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
 [issues-url]: https://github.com/SilasRodrigues19/siimpsonss.vercel.app/issues
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/siimpsonss.vercel.app.svg?style=for-the-badge
