@@ -1,221 +1,219 @@
-[data-theme="dark"] .iptv-categories h4 {
-  color: #fff !important;
-}
+  [data-theme="dark"] .iptv-categories h4 {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] .iptv ul li strong, b {
-  color: #fff !important;
-}
+  [data-theme="dark"] .iptv ul li strong, b {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] .crono li {
-  border-bottom: 1px solid #fff;
-}
+  [data-theme="dark"] .crono li {
+    border-bottom: 1px solid #fff;
+  }
 
-[data-theme="dark"] .swiper-slide {
-  background-color: #444444;
-}
+  [data-theme="dark"] .swiper-slide {
+    background-color: #444444;
+  }
 
-[data-theme="dark"] .indicadores {
-  color: #fff !important;
-}
+  [data-theme="dark"] .indicadores {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] ::selection {
-  background: #555555;
-}
+  [data-theme="dark"] ::selection {
+    background: #555555;
+  }
 
-[data-theme="dark"] #footer .copyright #back {
-  color: #000 !important;
-}
+  [data-theme="dark"] #footer .copyright #back {
+    color: #000 !important;
+  }
 
-[data-theme="dark"] #footer .copyright #back:hover {
-  color: #fff !important;
-}
+  [data-theme="dark"] #footer .copyright #back:hover {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] .fab {
-  color: #fff !important;
-}
+  [data-theme="dark"] .fab {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] .icon-iptv {
-  color: #000 !important;
-}
+  [data-theme="dark"] .icon-iptv {
+    color: #000 !important;
+  }
 
-[data-theme="dark"] .navbar img {
-  filter: invert(1);
-}
+  [data-theme="dark"] .navbar img {
+    filter: invert(1);
+  }
 
-[data-theme="dark"] #heading-gallery {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25)), url("../../images/camera-invert.png");
-}
+  [data-theme="dark"] #heading-gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25)), url("../../images/camera-invert.png");
+  }
 
-[data-theme="dark"] #heading-gallery strong {
-  color: rgba(255, 255, 255, 0.9);
-}
+  [data-theme="dark"] #heading-gallery strong {
+    color: rgba(255, 255, 255, 0.9);
+  }
 
-[data-theme="dark"] .content-gallery h2 {
-  color: #fff;
-}
+  [data-theme="dark"] .content-gallery h2 {
+    color: #fff;
+  }
 
-[data-theme="dark"] .content-gallery strong {
-  color: #555555;
-}
+  [data-theme="dark"] .content-gallery strong {
+    color: #555555;
+  }
 
-[data-theme="dark"] {
-  background-image: linear-gradient(to right, rgba(111, 111, 111, 1), rgba(255, 255, 255, 1)) !important;
-  color: #fff;
-}
+  [data-theme="dark"] {
+    background-image: linear-gradient(to right, rgba(111, 111, 111, 1), rgba(255, 255, 255, 1)) !important;
+    color: #fff;
+  }
 
-[data-theme="dark"] h3 {
-  color: #fff;
-}
+  [data-theme="dark"] h3 {
+    color: #fff;
+  }
 
-[data-theme="dark"] .highlights .content .icon {
-  color: #fff;
-}
+  [data-theme="dark"] .highlights .content .icon {
+    color: #fff;
+  }
 
-[data-theme="dark"] .highlights .content .icon:hover {
-  color: #090f0f;
-}
+  [data-theme="dark"] .highlights .content .icon:hover {
+    color: #090f0f;
+  }
 
-[data-theme="dark"] a {
-  color: #fff !important;
-}
+  [data-theme="dark"] a {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] header.special p {
-  color: #fff;
-}
+  [data-theme="dark"] header.special p {
+    color: #fff;
+  }
 
-[data-theme="dark"] .btn-secondary {
-  background-color: #000 !important;
-  border-color: #fff !important;
-}
+  [data-theme="dark"] .btn-secondary {
+    background-color: #000 !important;
+    border-color: #fff !important;
+  }
 
-[data-theme="dark"] .modal-body p, .modal-title {
-  color: #fff;
-}
+  [data-theme="dark"] .modal-body p, .modal-title {
+    color: #fff;
+  }
 
-[data-theme="dark"] .modal-content {
-  background-color: rgba(0, 0, 0, .7);
-}
+  [data-theme="dark"] .modal-content {
+    background-color: rgba(0, 0, 0, .7);
+  }
 
-[data-theme="dark"] a:hover {
-  color: #ce1b28 !important;
-}
+  [data-theme="dark"] a:hover {
+    color: #ce1b28 !important;
+  }
 
-[data-theme="dark"] .btn-section-live {
-  color: #fff !important;
-}
+  [data-theme="dark"] .btn-section-live {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] .btn-section-live:hover {
-  color: #fff !important;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.9);
-  transition: all 0.2s ease-out;
-}
+  [data-theme="dark"] .btn-section-live:hover {
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease-out;
+  }
 
-[data-theme="dark"] .section-live a:active {
-  color: #fff !important;
-}
+  [data-theme="dark"] .section-live a:active {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] section .content p strong.twitch-color {
-  color: #9147FF !important;
-}
+  [data-theme="dark"] section .content p strong.twitch-color {
+    color: #9147FF !important;
+  }
 
-[data-theme="dark"] section .content {
-  background-color: rgba(0, 0, 0, 0.6) !important;
-}
+  [data-theme="dark"] section .content {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
 
-[data-theme="dark"] section .content h2 {
-  color: #fff;
-}
+  [data-theme="dark"] section .content h2 {
+    color: #fff;
+  }
 
-[data-theme="dark"] section .content p {
-  color: #fff;
-}
+  [data-theme="dark"] section .content p {
+    color: #fff;
+  }
 
-[data-theme="dark"] section .content p strong {
-  color: #fff !important;
-}
+  [data-theme="dark"] section .content p strong {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] header a {
-  color: #fff;
-}
+  [data-theme="dark"] header a {
+    color: #fff;
+  }
 
-[data-theme="dark"] header a:hover {
-  color: #ce1b28;
-}
+  [data-theme="dark"] header a:hover {
+    color: #ce1b28;
+  }
 
-[data-theme="dark"] header h2 {
-  color: #fff;
-}
+  [data-theme="dark"] header h2 {
+    color: #fff;
+  }
 
-[data-theme="dark"] footer a:hover {
-  color: #ce1b28 !important;
-}
+  [data-theme="dark"] footer a:hover {
+    color: #ce1b28 !important;
+  }
 
-[data-theme="dark"] .bg-light {
-  background-color: #333 !important;
-}
+  [data-theme="dark"] .bg-light {
+    background-color: #333 !important;
+  }
 
-[data-theme="dark"] .bg-white {
-  background-color: #000 !important;
-}
+  [data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+  }
 
-[data-theme="dark"] .bg-black {
-  background-color: #eee !important;
-}
+  [data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+  }
 
-/* Swal Alert */
+  /* Swal Alert */
 
-[data-theme="dark"] .swal-modal {
-  background-color: rgba(0, 0, 0, 0.45);
-}
+  [data-theme="dark"] .swal-modal {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
 
-[data-theme="dark"] .swal-modal .swal-title {
-  color: #fff !important;
-}
+  [data-theme="dark"] .swal-modal .swal-title {
+    color: #fff !important;
+  }
 
-[data-theme="dark"] .swal-modal .swal-text {
-  color: #fff !important;
-}
+  [data-theme="dark"] .swal-modal .swal-text {
+    color: #fff !important;
+  }
 
-.themeSwitch::before {
-  content: '\f185';
-  font-family: fontAwesome;
-}
+  .themeSwitch::before {
+    content: '\f185';
+    font-family: fontAwesome;
+  }
 
-[data-theme="dark"] .themeSwitch::before {
-  content: '\f186';
-  font-family: fontAwesome;
-}
+  [data-theme="dark"] .themeSwitch::before {
+    content: '\f186';
+    font-family: fontAwesome;
+  }
 
-.themeSwitch::after {
-  content: 'Light';
-  position: absolute;
-  left: 40px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #fff;
-  white-space: nowrap;
-  letter-spacing: 1px;
-  pointer-events: none;
-}
+  .themeSwitch::after {
+    content: 'Light';
+    position: absolute;
+    left: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    pointer-events: none;
+  }
 
-[data-theme="dark"] .themeSwitch::after {
-  content: 'Dark';
-}
+  [data-theme="dark"] .themeSwitch::after {
+    content: 'Dark';
+  }
 
-.themeSwitch {
-  position: absolute;
-  top: 9px;
-  right: 270px;
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  background-color: #111;
-  cursor: pointer;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dark {}
+  .themeSwitch {
+    position: absolute;
+    top: 9px;
+    right: 270px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #111;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
